@@ -1,0 +1,15 @@
+version: "3.4"
+services:
+  validator:  
+    build:
+       context: .
+       dockerfile: Dockerfile 
+       network: host
+    network_mode: "bridge"
+    volumes:
+      - type: bind
+        source: .
+        target: /app
+    ports:    
+        - "3006:3006"
+    stdin_open: true

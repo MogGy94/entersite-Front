@@ -1,0 +1,22 @@
+.main-editor{
+    display: grid;
+    grid-template: repeat(4,1fr) /repeat(3,1fr);
+    height: 100%;
+    gap: 5px;
+}
+
+.pdf-viewer{
+    grid-column: 1 /span 2;
+    grid-row: 1 /span 4;
+    display: grid;
+   /*  background: #aaaaeb; */
+}
+
+.document-register{
+   /*  background: #a05f5f; */
+}
+
+.metadata-validator{
+    grid-row: 2 /span 3;
+   /*  background: #7aa77a; */
+}
